@@ -1,1 +1,41 @@
+<!doctype html>
+<html lang="en">
+<!--divinectorweb.com-->
+<head>
+    <meta charset="UTF-8">
+    <title>Animated Sidebar Navigation</title>
+    <link rel="stylesheet" href="style.css">    
+</head>
+<body>
 
+    <div id="leftMenu">
+        <a href="javscript:void(0)" class="btn-area" onclick="closeBtn()">×</a>
+        <div class="mainNav">
+            <a href="#">home</a>
+        <a href="#">about</a>
+        <a href="#">portfolio</a>
+        <a href="#">services</a>
+        <a href="#">blog</a>
+        <a href="#">contact</a>
+        </div>
+    </div>
+    <span onclick="openBtn()">☰ Menu</span>
+    
+    <div class="content">
+        <h2>animated <br>Sidebar</h2>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script>
+        function openBtn()
+        {
+            document.getElementById("leftMenu").style.width = "250px";
+        }
+
+        function closeBtn()
+        {
+            document.getElementById("leftMenu").style.width = "0";
+        }
+    </script>
+</body>
+</html>
